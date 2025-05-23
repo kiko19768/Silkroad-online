@@ -1,0 +1,180 @@
+{
+  "id": "char_001",
+  "userId": "user_001",
+  "name": "فارس الصحراء",
+  "characterClass": "warrior",
+  "gender": "male",
+  "level": 10,
+  "experience": 5000,
+  "requiredExperience": 10000,
+  "health": 500,
+  "maxHealth": 500,
+  "mana": 200,
+  "maxMana": 200,
+  "strength": 30,
+  "intelligence": 15,
+  "vitality": 25,
+  "agility": 20,
+  "luck": 10,
+  "physicalAttack": 50,
+  "magicalAttack": 20,
+  "physicalDefense": 40,
+  "magicalDefense": 30,
+  "accuracy": 80,
+  "evasion": 30,
+  "criticalRate": 10,
+  "criticalDamage": 150,
+  "moveSpeed": 5,
+  "attackSpeed": 1.2,
+  "gold": 1500,
+  "gems": 50,
+  "currentMapId": "map_001",
+  "positionX": 500,
+  "positionY": 300,
+  "guildId": "guild_001",
+  "guildName": "فرسان الفتح",
+  "guildRank": "member",
+  "skills": [
+    {
+      "id": "skill_001",
+      "name": "ضربة قوية",
+      "description": "ضربة قوية تسبب ضرر كبير للعدو",
+      "level": 3,
+      "maxLevel": 5,
+      "cooldown": 5.0,
+      "manaCost": 20,
+      "range": 50,
+      "damageType": "physical",
+      "damageMultiplier": 1.5,
+      "areaOfEffect": false,
+      "effectRadius": 0,
+      "iconPath": "assets/images/skills/heavy_strike.png",
+      "animationPath": "assets/animations/heavy_strike.json",
+      "soundPath": "assets/audio/sfx/heavy_strike.mp3"
+    },
+    {
+      "id": "skill_002",
+      "name": "دوامة السيف",
+      "description": "هجوم دائري يسبب ضرر للأعداء المحيطين",
+      "level": 2,
+      "maxLevel": 5,
+      "cooldown": 8.0,
+      "manaCost": 35,
+      "range": 30,
+      "damageType": "physical",
+      "damageMultiplier": 1.2,
+      "areaOfEffect": true,
+      "effectRadius": 100,
+      "iconPath": "assets/images/skills/sword_spin.png",
+      "animationPath": "assets/animations/sword_spin.json",
+      "soundPath": "assets/audio/sfx/sword_spin.mp3"
+    }
+  ],
+  "equipment": {
+    "weapon": {
+      "id": "item_001",
+      "name": "سيف الفاتح",
+      "type": "weapon",
+      "subType": "sword",
+      "rarity": "rare",
+      "level": 10,
+      "requiredLevel": 10,
+      "requiredClass": "warrior",
+      "stats": {
+        "physicalAttack": 30,
+        "criticalRate": 5
+      },
+      "durability": 100,
+      "maxDurability": 100,
+      "iconPath": "assets/images/items/conqueror_sword.png",
+      "modelPath": "assets/models/conqueror_sword.json"
+    },
+    "helmet": {
+      "id": "item_002",
+      "name": "خوذة المحارب",
+      "type": "armor",
+      "subType": "helmet",
+      "rarity": "uncommon",
+      "level": 8,
+      "requiredLevel": 8,
+      "requiredClass": "warrior",
+      "stats": {
+        "physicalDefense": 15,
+        "magicalDefense": 5
+      },
+      "durability": 80,
+      "maxDurability": 100,
+      "iconPath": "assets/images/items/warrior_helmet.png",
+      "modelPath": "assets/models/warrior_helmet.json"
+    }
+  },
+  "inventory": [
+    {
+      "id": "item_003",
+      "name": "جرعة صحة",
+      "type": "consumable",
+      "subType": "potion",
+      "rarity": "common",
+      "level": 1,
+      "requiredLevel": 1,
+      "requiredClass": null,
+      "stats": {
+        "healthRestore": 100
+      },
+      "quantity": 10,
+      "maxStack": 99,
+      "iconPath": "assets/images/items/health_potion.png"
+    },
+    {
+      "id": "item_004",
+      "name": "جرعة طاقة",
+      "type": "consumable",
+      "subType": "potion",
+      "rarity": "common",
+      "level": 1,
+      "requiredLevel": 1,
+      "requiredClass": null,
+      "stats": {
+        "manaRestore": 100
+      },
+      "quantity": 5,
+      "maxStack": 99,
+      "iconPath": "assets/images/items/mana_potion.png"
+    }
+  ],
+  "quests": [
+    {
+      "id": "quest_001",
+      "name": "مهمة الصحراء",
+      "description": "اقتل 10 وحوش في الصحراء",
+      "status": "in_progress",
+      "objectives": [
+        {
+          "type": "kill",
+          "targetId": "monster_001",
+          "targetName": "عقرب الصحراء",
+          "required": 10,
+          "completed": 5
+        }
+      ],
+      "rewards": {
+        "experience": 1000,
+        "gold": 500,
+        "items": [
+          {
+            "id": "item_005",
+            "quantity": 1
+          }
+        ]
+      }
+    }
+  ],
+  "state": "idle",
+  "direction": "down",
+  "additionalProperties": {
+    "pvpRank": 5,
+    "pvpPoints": 250,
+    "reputation": 100,
+    "titles": ["محارب الصحراء", "قاتل العقارب"]
+  }
+}

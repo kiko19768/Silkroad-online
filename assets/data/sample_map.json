@@ -1,0 +1,91 @@
+{
+  "id": "map_001",
+  "name": "مدينة الفتح",
+  "description": "المدينة الرئيسية في عالم الفتح، مركز التجارة والحضارة",
+  "type": "city",
+  "mapType": "city",
+  "requiredLevel": 1,
+  "isPvpEnabled": false,
+  "isGuildWarEnabled": false,
+  "isSafeZone": true,
+  "isInstanceMap": false,
+  "maxPlayers": 100,
+  "width": 2048,
+  "height": 2048,
+  "backgroundPath": "assets/images/maps/city_background.png",
+  "foregroundPath": "assets/images/maps/city_foreground.png",
+  "tilemapPath": "assets/maps/city_tilemap.json",
+  "collisionMapPath": "assets/maps/city_collision.json",
+  "musicPath": "assets/audio/music/city_theme.mp3",
+  "miniMapPath": "assets/images/maps/city_minimap.png",
+  "fullMapPath": "assets/images/maps/city_fullmap.png",
+  "portals": [
+    {
+      "id": "portal_001",
+      "name": "بوابة الصحراء",
+      "targetMapId": "map_002",
+      "targetX": 100,
+      "targetY": 100,
+      "positionX": 1900,
+      "positionY": 1000,
+      "radius": 50,
+      "requiredLevel": 5,
+      "isActive": true
+    },
+    {
+      "id": "portal_002",
+      "name": "بوابة الغابة",
+      "targetMapId": "map_003",
+      "targetX": 100,
+      "targetY": 100,
+      "positionX": 1000,
+      "positionY": 1900,
+      "radius": 50,
+      "requiredLevel": 5,
+      "isActive": true
+    }
+  ],
+  "npcs": [
+    {
+      "id": "npc_001",
+      "name": "التاجر حسن",
+      "type": "merchant",
+      "positionX": 500,
+      "positionY": 500,
+      "rotation": 180,
+      "modelPath": "assets/images/npcs/merchant.png",
+      "dialogueId": "dialogue_001",
+      "shopIds": ["shop_001"],
+      "isInteractable": true
+    },
+    {
+      "id": "npc_002",
+      "name": "الحكيم عمر",
+      "type": "quest_giver",
+      "positionX": 800,
+      "positionY": 600,
+      "rotation": 90,
+      "modelPath": "assets/images/npcs/wise_man.png",
+      "dialogueId": "dialogue_002",
+      "questIds": ["quest_001", "quest_002"],
+      "isInteractable": true
+    }
+  ],
+  "monsterSpawns": [
+    {
+      "id": "spawn_001",
+      "monsterId": "monster_001",
+      "count": 5,
+      "positionX": 1500,
+      "positionY": 1500,
+      "radius": 200,
+      "respawnTime": 60,
+      "isActive": true
+    }
+  ],
+  "additionalProperties": {
+    "dayNightCycle": true,
+    "weatherEffects": true,
+    "ambientSounds": ["city_crowd", "city_birds", "city_wind"]
+  }
+}
